@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snappy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/style.min.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+<link rel="manifest" href="img/favicon/Favicon/site.webmanifest">
+<link rel="mask-icon" href="img/favicon/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#9f00a7">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div data-barba="wrapper" class="wrapper ">
+        <header class="header">
+    <div class="container-fluid">
+        <div class="row px-4">
+            <div class="col-8 col-md-7 d-flex justify-content-between align-items-center">
+                <a href="index.html">
+                    <svg width="34" height="29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.18 23.01h1a1 1 0 00-1-1v1zm0 3.99v1a1 1 0 001-1h-1zM1.365 27h-1a1 1 0 001 1v-1zm0-3.99l-.813-.583a1 1 0 00-.187.583h1zm11.62-16.205l.813.583a1 1 0 00-.813-1.583v1zm-11.34 0h-1a1 1 0 001 1v-1zm0-3.955v-1a1 1 0 00-1 1h1zm17.255 0h1a1 1 0 00-1-1v1zm0 3.955l.812.584a1 1 0 00.188-.584h-1zM7.245 23.01l-.812-.584a1 1 0 00.812 1.584v-1zm10.935 0V27h2v-3.99h-2zm1 2.99H1.365v2H19.18v-2zM2.365 27v-3.99h-2V27h2zm-.187-3.407l11.62-16.205-1.626-1.166L.552 22.427l1.626 1.166zM12.985 5.805H1.645v2h11.34v-2zm-10.34 1V2.85h-2v3.955h2zm-1-2.955H18.9v-2H1.645v2zm16.255-1v3.955h2V2.85h-2zm.188 3.371L6.433 22.426l1.624 1.168L19.712 7.389 18.088 6.22zM7.245 24.01H19.18v-2H7.245v2z"
+                            fill="#000" />
+                        <rect x="26" y="20" width="8" height="8" rx="1" fill="#000" />
+                        .
+                    </svg>
+                </a>
+            </div>
+            <div
+                class="col-2 col-md-4 right__part d-flex align-items-center justify-content-center justify-content-md-end">
+                <a href="https://drive.google.com/file/d/1-4cjO-5BDBD1wcGF9fVMZ0KVKzdlCcCM/view?usp=sharing"
+                    class="download__resume d-flex align-items-center">
+                    <div class="change__icons d-none d-md-block"></div>
+                    <p class="text__download ms-2 d-none d-md-block">Download resume</p>
+                </a>
+            </div>
+            <div class="col-2 col-md-1 d-flex align-items-center justify-content-end">
+                <a id="burgerMenu" href="" class="burger__menu" data-bs-toggle="modal" data-bs-target="#modalMain">
+                    <div class="burger-1"></div>
+                    <div class="burger-2"></div>
+                    <div class="burger-3"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Modal -->
+<div class="modal fade" id="modalMain" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center px-4 modal-header">
+                    <div class="col-10">
+                        <a href="https://drive.google.com/file/d/1-4cjO-5BDBD1wcGF9fVMZ0KVKzdlCcCM/view?usp=sharing"
+                            class="download__resume d-flex align-items-center mt-4">
+                            <div class="change__icons d-block d-md-none"></div>
+                            <p class="text__download ms-2 d-block d-md-none">Download resume</p>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <button type="button"
+                            class="btn-close shadow-none d-flex justify-content-center mt-3 mt-md-4 me-1"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body d-flex justify-content-center align-items-center">
+                <ul class="menu">
+                    <li class="mb-4"><a class="menu__link " href="works.html">Works</a></li>
+                    <li><a class="menu__link" href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <a class="socnetwork ms-0 me-3" href="https://www.behance.net/zuyy"><img src="img/behance 1.svg"
+                        alt=""></a>
+                <a class="socnetwork ms-0 me-3" href="https://github.com/Misha-Zuy"><img src="img/Vector.svg"
+                        alt=""></a>
+                <a class="socnetwork ms-0 me-3" href="https://www.linkedin.com/in/misha-zuy-584081204/"><img
+                        src="img/linkedin (1) 1.svg" alt=""></a>
+                <a class="socnetwork ms-0 me-0" href="https://www.instagram.com/1mishazy/"><img
+                        src="img/instagram (4) 1.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+        <main>
+            <div class="">
+                <img class="bg-work" src="img/bg-snappy.jpg" alt="">
+            </div>
+
+            <section class="section140">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2>Snappy</h2>
+                            <p class="subtitle">This application was design for delivery in city Sumy. The <br> main
+                                task
+                                was to do an accessible and understanding <br> interface. But also that it to stand out
+                                among the <br> applications. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-grey">
+                <div class="container ">
+                    <div class="row">
+                        <div class="section__name d-flex align-items-center">
+                            <div class="line__general me-3"></div>
+                            <div class="text__general">Project Overview</div>
+                        </div>
+                        <div class="col-8">
+                            <div>
+                                <p class="under__h3 mt-0">CHALLENGE</p>
+                                <p class="subtext__overview">Today, people want to be aware of their orders throughout
+                                    the
+                                    entire order and <br>
+                                    delivery
+                                    cycle. Knowing when their order arrived in the kitchen, when their food <br> was
+                                    prepared,
+                                    shipped, and the estimated delivery time is proving to be critical for <br> today's
+                                    customers.
+                                    Therefore, the main focus should be on tracking the courier and <br> the fulfillment
+                                    status
+                                    of
+                                    the customer order.</p>
+                            </div>
+                            <div class="mb-5 ">
+                                <p class="under__h3 ">SOLUTION</p>
+                                <ul>
+                                    <li class="subtext__overview">Develop an application that will track the whereabouts
+                                        of
+                                        the courier and display the status of the order</li>
+                                    <li class="subtext__overview mt-3">Develop a unique shell for the application in the
+                                        form of
+                                        a corporate identity</li>
+                                </ul>
+                            </div>
+                            <div class="void__block"></div>
+                        </div>
+                        <div class="col-4 d-flex justify-content-center">
+                            <div>
+                                <div class="mb-5">
+                                    <p class="under__h3 mt-0 ">ROLE</p>
+                                    <p class="subtext__overview">UX, UI Designer</p>
+                                </div>
+                                <div class="mb-5">
+                                    <p class="under__h3 mt-0">TIME</p>
+                                    <p class="subtext__overview">2.5 weeks</p>
+                                </div>
+                                <div class="mb-5">
+                                    <p class="under__h3 mt-0">TOOLS</p>
+                                    <p class="subtext__overview">Figma, Photoshop</p>
+                                </div>
+                                <div class="mb-5">
+                                    <p class="under__h3 mt-0">YEAR</p>
+                                    <p class="subtext__overview">2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center justify-content-sm-start">
+                            <a href="https://www.figma.com/proto/GRGhMigkKRKadHlOoxks3R/Snappy?page-id=0%3A1&node-id=2%3A1378&viewport=1625%2C963%2C0.582718551158905&scaling=min-zoom&starting-point-node-id=2%3A1585"
+                                class="general-button">View prototype
+                                <img class="ms-3" src="img//arrow-white.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EMPATHIZE -->
+            <div class="section200 pb-0 container">
+                <div class="row">
+                    <div class="section__name d-flex align-items-center mb-0">
+                        <div class="line__general me-3"></div>
+                        <div class="text__general">EMPATHIZE</div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="section100140">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Research</h3>
+                            <p class="subtitle">Through market research, user interviews, and competitive analysis, I
+                                decided to <br> understand the market</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section140 pt-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Research Goals</h3>
+                            <p class="subtitle">Before starting my research on a project, the first thing I did was set
+                                some
+                                goals and <br> create a research plan that would guide my research process.</p>
+                            <div class="mt-4 ms-4">
+                                <ul>
+                                    <li class="subtext__overview">Understand the market trends of the food industry</li>
+                                    <li class="subtext__overview">Identify Snappy target market</li>
+                                    <li class="subtext__overview">Identify Snappy competitors and assess strengths and
+                                        weaknesses</li>
+                                    <li class="subtext__overview">Understanding what the experience of people who use
+                                        this
+                                        application is</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section140 pt-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Competitive analysis</h3>
+                            <p class="subtitle">After researching the market, I started analyzing competitors to find
+                                out
+                                their strengths <br> and weaknesses for application in Snappy</p>
+                            <div class="img__block">
+                                <img src="img/analysis__snappy.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section140 pt-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>User Interviews</h3>
+                            <p class="subtitle">At this stage, an interview was conducted with <strong>4
+                                    participants</strong>, asking them questions <br> that made me understand their
+                                experience with applications</p>
+                            <div class="mt-4 ms-4">
+                                <ul>
+                                    <li class="subtext__overview">How often do you order pizza or sushi?</li>
+                                    <li class="subtext__overview">Why are you ordering food in apps?</li>
+                                    <li class="subtext__overview">What influences your decisions when choosing a food
+                                        delivery app?</li>
+                                    <li class="subtext__overview">What is the most important aspect for you when using
+                                        the
+                                        application?</li>
+                                    <li class="subtext__overview">Tell me about your in-app food ordering experience
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="subtitle">After the interview, I spent some time getting acquainted with the
+                                information received <br> in order to better understand it.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section140 pt-0 pb-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Persona</h3>
+                            <p class="subtitle">Based on my research, I have formed a certain image</p>
+                            <div>
+                                <img class="img__block" src="img/persona-snappy.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interaction Design -->
+            <div class="container section200100 pb-0">
+                <div class="row">
+                    <div class="section__name d-flex align-items-center mb-0">
+                        <div class="line__general me-3"></div>
+                        <div class="text__general">Interaction Design</div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="section100140">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>User Flow</h3>
+                            <p class="subtitle">Through market research, user interviews, and competitive analysis, I
+                                decided to <br> understand the market</p>
+                            <div>
+                                <img class="img__block" src="img/snappy-user flow.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section140 pt-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Sketches</h3>
+                            <p class="subtitle">This phase is a very efficient way of communicating design, while
+                                allowing
+                                us to try out a multitude of ideas and <br> iterate them before settling on one.</p>
+                            <div class="d-flex justify-content-start">
+                                <img class="img__block" src="img/iam-snappy.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-6"><img class=" mt-4 img-fluid" src="img/sketches - snappy-1.jpg" alt="">
+                            </div>
+                            <div class="col-6"><img class="mt-4 img-fluid" src="img/sketches - snappy.jpg" alt=""></div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section140 pt-0 pb-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Digital Wireframes</h3>
+                            <p class="subtitle">Wireframes helped us find the right balance between the level of detail
+                                and
+                                speed of creation. The customer <br> approved these wireframes, and this is not the
+                                least
+                                important process that helped the customer to imagine his <br> future application.</p>
+                        </div>
+                        <div class="col-12">
+                            <img class="img__block" src="img/Wireframes - snappy.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main pages of the application -->
+            <div class="container section200100 pb-0">
+                <div class="row">
+                    <div class="section__name d-flex align-items-center mb-0">
+                        <div class="line__general me-3"></div>
+                        <div class="text__general">Main pages of the application</div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="section100140">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-sm-6 d-flex justify-content-center justify-content-sm-start mb-3 mb-sm-0">
+                            <img src="img/screenHome-snappy.jpg" alt="">
+                        </div>
+                        <div class="col-sm-6 text-center text-sm-start">
+                            <h3>Home</h3>
+                            <p class="subtitle">This screen is more important than all the others. Because it contains
+                                the
+                                important process of this application. This is a choice of the place and time of
+                                delivery.
+                                It was decided to accommodation it in the tab "Home"</p>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center my-5">
+                        <div class="col-sm-6 text-center text-sm-start mb-3 mb-sm-0">
+                            <h3>Your poducts</h3>
+                            <p class="subtitle">This tab contains the products that you add. Here also you might
+                                increase
+                                the number and see a total of the selected products. If you pull to the left any
+                                product,
+                                that you will have the opportunity to delete it</p>
+                        </div>
+                        <div class="col-sm-6 d-flex justify-content-center justify-content-end ">
+                            <img src="img/screenYourOrders-snappy.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center">
+                        <div class="col-sm-6 d-flex justify-content-center justify-content-sm-start mb-3 mb-sm-0">
+                            <img src="img/screeninProgress-snappy.jpg" alt="">
+                        </div>
+                        <div class="col-sm-6 text-center text-sm-start">
+                            <h3>In progress</h3>
+                            <p class="subtitle">This tab is the result of successfully completing the previous screens.
+                                Here
+                                you can track the status of your order and also monitor the courier in real-time. You
+                                also
+                                can delete the order if you pull to the left</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Brand identity -->
+            <div class="container section200100 pb-0">
+                <div class="row">
+                    <div class="section__name d-flex align-items-center mb-0">
+                        <div class="line__general me-3"></div>
+                        <div class="text__general">Brand identity</div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="section100140">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Style Tile</h3>
+                            <p class="subtitle">This is a design deliverable consisting of fonts, colors and interface
+                                elements that communicates the evolution of <br> a visual brand.</p>
+                        </div>
+                        <div class="col-12">
+                            <div>
+                                <img class="img__block" src="img/styleTitle - snappy.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section140 pt-0 pb-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>UI Kit</h3>
+                            <p class="subtitle">Using the style tile as a guideline, I incorporated Snappy’s <br>
+                                branding
+                                into the UI elements used for Snappy’s application. To ensure that the design standards
+                                remain coherent across future developments or other designers</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12"><img class="img__block" class=" mt-4 img-fluid"
+                                    src="img/UI kit - snappy.jpg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Feedback -->
+            <div class="container section200100 pb-0">
+                <div class="row">
+                    <div class="section__name d-flex align-items-center mb-0">
+                        <div class="line__general me-3"></div>
+                        <div class="text__general">feedback</div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="section100140 pb-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Customer Reviews</h3>
+                            <p class="subtitle">This moment is really important for me and, I think, for any specialist.
+                                Consideration should be given to feedback <br> to improve the application and
+                                interaction
+                                with the audience.</p>
+                        </div>
+                        <div class="col-sm-6 col-lg-3 img__block">
+                            <div class="accordion">
+                                <div class="content-card text-center">
+                                    <img src="img/Tomas Gatison.jpg" alt="">
+                                    <p class="nameuser mt-2">Tomas Gatison</p>
+                                    <img src="img/satars-1.svg" alt="">
+                                    <div class="arrow__open">
+                                        <div class="arrow__circule">
+                                            <button
+                                                class="accordion-button shadow-none justify-content-center pb-0 collapsed"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                            </button>
+                                        </div>
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body pb-0">
+                                                <strong>Great app.</strong> Just super. The application is very
+                                                convenient,
+                                                seriously, how many different mobile applications exist for ordering
+                                                food.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3  img__block">
+                            <div class="accordion">
+                                <div class="content-card text-center">
+                                    <img src="img/Mark Delishon.jpg" alt="">
+                                    <p class="nameuser mt-2">Mark Delishon</p>
+                                    <img src="img/stars-2.svg" alt="">
+                                    <div class="arrow__open">
+                                        <div class="arrow__circule">
+                                            <button
+                                                class="accordion-button shadow-none justify-content-center pb-0 collapsed"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="true" aria-controls="collapseTwo">
+                                            </button>
+                                        </div>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingtwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body pb-0">
+                                                <strong>Fast and accurate delivery.</strong> Food is delivered quickly
+                                                and
+                                                efficiently. There was no such thing that something was spilled, crushed
+                                                or
+                                                spoiled.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3  img__block">
+                            <div class="accordion">
+                                <div class="content-card text-center">
+                                    <img src="img/Gloria Delino.jpg" alt="">
+                                    <p class="nameuser mt-2">Gloria Delino</p>
+                                    <img src="img/stars-3.svg" alt="">
+                                    <div class="arrow__open">
+                                        <div class="arrow__circule">
+                                            <button
+                                                class="accordion-button shadow-none justify-content-center pb-0 collapsed"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="true" aria-controls="collapseThree">
+                                            </button>
+                                        </div>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body pb-0">
+                                                <strong>Great application, user-friendly interface.</strong> I have been
+                                                using the "Snappy" application quite recently. But I like that with it
+                                                you
+                                                can choose a treat for yourself, family and friends for any reason and
+                                                on
+                                                any day. And the fact that you can order meals for points.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3  img__block">
+                            <div class="accordion">
+                                <div class="content-card text-center">
+                                    <img src="img/Brad Jackson.jpg" alt="">
+                                    <p class="nameuser mt-2">Brad Jackson</p>
+                                    <img src="img/stars-4.svg" alt="">
+                                    <div class="arrow__open">
+                                        <div class="arrow__circule">
+                                            <button
+                                                class="accordion-button shadow-none justify-content-center pb-0 collapsed"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                aria-expanded="true" aria-controls="collapseFour">
+                                            </button>
+                                        </div>
+                                        <div id="collapseFour" class="accordion-collapse collapse"
+                                            aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body pb-0">
+                                                <strong>User-friendly application and service.</strong> I wanted to
+                                                order a
+                                                set of sushi and I did it. It was the user-friendly process of ordering.
+                                                I
+                                                liked also that the application has tracking the courier, as sometimes
+                                                wanting to look where he is.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- End of workflow -->
+            <div class="container section200100 pb-0">
+                <div class="row">
+                    <div class="section__name d-flex align-items-center mb-0">
+                        <div class="line__general me-3"></div>
+                        <div class="text__general">End of workflow</div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="section100140">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Final Prototype</h3>
+                            <p class="subtitle">Taking my revised wireframes, I now worked on creating final, <br> high
+                                fidelity
+                                wireframes and created a final prototype. With Snappy’s branding defined, I worked on
+                                incorporating their identity to craft the visual design of <br> their new application.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img__block" src="img/1-final.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img__block" src="img/2-final.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img__block" src="img/3-final.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mt-5 d-flex justify-content-center">
+                            <a href="https://www.figma.com/proto/GRGhMigkKRKadHlOoxks3R/Snappy?page-id=0%3A1&node-id=2%3A1378&viewport=1625%2C963%2C0.582718551158905&scaling=min-zoom&starting-point-node-id=2%3A1585"
+                                class="general-button">View prototype
+                                <img class="ms-3" src="img//arrow-white.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PRELOADER -->
+            <div id="preloader" class="preloader d-flex justify-content-center align-items-center">
+                <lottie-player class="preloader__image"
+                    src="https://assets9.lottiefiles.com/packages/lf20_zphgqczl.json" background="transparent" speed="1"
+                    style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+            </div>
+
+            <button role="button" class="scroll-to-top ">
+    <div class="scroll-circle d-flex justify-content-center align-items-center">
+        <img class="arrow-scroll" class="" src="img//scroll-to-top.svg" alt="">
+    </div>
+</button>
+
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center justify-content-end">
+                    <div class="col-2">
+                        <a class="link__nextproj d-flex align-items-center justify-content-end" href="nuti.html">
+                            <p class="text__next">Nuti</p>
+                            <div class="ms-3">
+                                <img class="arrow__nav" src="img/arrowNext.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <a class="footer__email" href="mailto:mikha5070@gmail.com">mikha5070@gmail.com</a>
+                <p class="footer__text mt-2 mb-4">I'm always down for new offers if I will have the time. There is so
+                    much
+                    <br>
+                    more you can do when
+                    you work together. Let's talk 🖐
+                </p>
+                <div class="social__network d-flex justify-content-sm-start">
+                    <a class="socnetwork me-3" href="https://www.behance.net/zuyy"><img src="img/behance 1.svg"
+                            alt=""></a>
+                    <a class="socnetwork me-3" href="https://github.com/Misha-Zuy"><img src="img/Vector.svg" alt=""></a>
+                    <a class="socnetwork me-3" href="https://www.linkedin.com/in/misha-zuy-584081204/"><img
+                            src="img/linkedin (1) 1.svg" alt=""></a>
+                    <a class="socnetwork me-3" href="https://www.instagram.com/1mishazy/"><img
+                            src="img/instagram (4) 1.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

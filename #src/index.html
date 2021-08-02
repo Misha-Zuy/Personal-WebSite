@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    @@include('_head.html')
+</head>
+
+<body>
+    <div class="wrapper ">
+        <div class="intro mb-0">
+            @@include('_header.html')
+            <div class="container-fluid">
+                <div class="row intro__text">
+                    <div class="col-12 text-center">
+                        <h1>Hello, I'm <span class="misha__zuy">Misha Zuy</span> <br><span class="uxui__designer">and
+                                I'm UX/UI designer</span> </h1>
+                    </div>
+                </div>
+                <div class="row pt-1 pb-1">
+                    <div class="col-12 d-flex justify-content-center justify-content-sm-start mb-5">
+                        <img src="img/gif.gif" width="180px" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center pb-4">
+                        <a href="#low-part" class="mouse__down">
+                            <img src="img/mouse (1) 1.svg" alt="">
+                            <img class="arrow__black rounded mx-auto d-block" src="img/arrow-black.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('_scrollUp.html')
+
+        <!-- Quicly Start -->
+        <div id="low-part" class="introductory__part">
+            <section class="section140">
+                <div class="container">
+                    <div class="row d-flex align-items-center ">
+                        <div class="col-12 col-lg-6">
+                            <div class="general__text d-flex align-items-center">
+                                <div class="line__general me-3"></div>
+                                <div class="text__general">Works</div>
+                            </div>
+                            <div class="hashtags-home d-flex">
+                                <div class="hash d-flex justify-content-center align-items-center me-3">Wireframes
+                                </div>
+                                <div class="hash d-flex justify-content-center align-items-center me-3">UX/UI</div>
+                                <div
+                                    class="hash d-flex justify-content-center align-items-center d-none d-sm-block me-3">
+                                    User flow</div>
+                                <div
+                                    class="hash d-flex justify-content-center align-items-center d-none d-sm-block me-3">
+                                    Usability</div>
+                            </div>
+                            <div class="adaptive__hash d-flex">
+                                <div
+                                    class="hash d-flex justify-content-center align-items-center me-3 mt-3 d-block d-sm-none">
+                                    User flow</div>
+                                <div
+                                    class="hash d-flex justify-content-center align-items-center me-3 mt-3 d-block d-sm-none">
+                                    Usability</div>
+                            </div>
+                            <a href="works.html" class="general-button">Go to works
+                                <img class="ms-3" src="img//arrow-white.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end d-none d-lg-block">
+                            <img src="img/home-work.jpg" width="800px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section140 pb-0">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-12 col-lg-6">
+                            <div class="general__text d-flex align-items-center">
+                                <div class="line__general me-3"></div>
+                                <div class="text__general">About</div>
+                            </div>
+                            <div class="hashtags-home d-flex">
+                                <div class="hash d-flex justify-content-center align-items-center me-3">Lifestyle
+                                </div>
+                                <div class="hash d-flex justify-content-center align-items-center me-3">Story</div>
+                                <div
+                                    class="hash d-flex justify-content-center align-items-center me-3 d-none d-sm-block">
+                                    Experience</div>
+                                <div
+                                    class="hash d-flex justify-content-center align-items-center me-3 d-none d-sm-block">
+                                    Defeats and
+                                    victories</div>
+                            </div>
+                            <div class="adaptive__hash d-flex">
+                                <div
+                                    class="hash d-flex justify-content-center align-items-center me-3 mt-3 d-block d-sm-none">
+                                    Experience</div>
+                                <div
+                                    class="hash d-flex justify-content-center align-items-center me-3 mt-3 d-block d-sm-none">
+                                    Defeats and
+                                    victories</div>
+                            </div>
+                            <a href="about.html" class="general-button">Learn more
+                                <img class="ms-3" src="img//arrow-white.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end d-none d-lg-block">
+                            <img src="img/home-iam.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        @@include('_footer.html')
+    </div>
+
+    <!-- PRELOADER -->
+    <div id="preloader" class="preloader d-flex justify-content-center align-items-center">
+        <lottie-player class="preloader__image" src="https://assets9.lottiefiles.com/packages/lf20_zphgqczl.json"
+            background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+    </div>
+
+    @@include('_script.html')
+</body>
+
+
+</html>

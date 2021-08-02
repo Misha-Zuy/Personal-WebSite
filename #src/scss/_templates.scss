@@ -1,0 +1,89 @@
+%l23{
+    font-size: 23px;
+    font-weight: 300;
+    color: #000;
+}
+%r14{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+%b40{
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+}
+%r20{
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+}
+%b16{
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+%b20{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+}
+%b60{
+    font-size: 60px;
+    font-weight: 700;
+    color: #000;
+}
+
+.section140{
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+.section200{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.section140200{
+    padding-top: 140px;
+    padding-bottom: 200px;
+}
+.section200100{
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+.section100140{
+    padding-top: 100px;
+    padding-bottom: 140px;
+}
+.section0200{
+    padding-bottom: 200px;
+}
+.section14060{
+    padding-top: 140px;
+    padding-bottom: 60px;
+}
+h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+}
+h2{
+    font-size: 60px;
+    font-weight: 700;
+    color: #000;
+}
+footer{
+    margin-top: 12rem;
+}
+.section__name{
+    margin-bottom: 6.25rem;
+}
+.subtitle{
+    margin-top: 1.8rem;
+    %l23{
+        font-size: 23px;
+        font-weight: 300;
+        color: #000;
+    }
+}

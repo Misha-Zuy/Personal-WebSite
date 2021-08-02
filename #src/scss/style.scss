@@ -1,0 +1,392 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+@import 'templates';
+
+// HEADER
+
+.burger__menu{
+    transform: rotate(180deg);
+}
+.burger__menu:hover {
+    .burger-2{
+        margin-top: 7px;
+        margin-bottom: 7px;
+        transition: all .15s linear;
+    }
+}
+.burger-1 {
+    width: 32px;
+    height: 2px;
+    background: #000;
+    transition: all .15s linear;
+    border-radius: 200px;
+}
+.burger-2 {
+    width: 32px;
+    height: 2px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    background: #000;
+    transition: all .15s linear;
+    border-radius: 200px;
+}
+.burger-3 {
+    width: 32px;
+    height: 2px;
+    background: #000;
+    transition: all .15s linear;
+    border-radius: 200px;
+}
+.text__download{
+    @extend %b16;
+}
+.change__icons{
+    width: 25px;
+    height: 50px;
+    background-image: url(../img/resume__def.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .1s linear;
+}
+.fade{
+    transition: all .2s ease-in;
+    background: #fff;
+}
+.menu{
+    li{
+        transition: all 0.2s ease-in;
+    }
+    li:hover{
+        transition: all 0.2s ease-in;
+        transform: scale(0.9);
+    }
+}
+.menu__link{
+    font-weight: 400;
+    font-size: 40px;
+    text-decoration: none;
+    color: #000;
+}
+.menu__link:hover{
+    color: #000;
+}
+.modal-dialog{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.modal-content{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+    border: 0;
+}
+.modal-footer{
+    border: 0;
+}
+.modal.fade{
+    transform: scale(1);
+}
+.modal.fade .modal-dialog{
+    transform: none;
+}
+.modal-header{
+    border: 0;
+}
+.btn-close{
+    background: url(../img/CHrest.svg) no-repeat;
+    opacity: 1;
+    margin-right: 5rem;
+    transition: all 0.1s linear;
+}
+.btn-close:hover {
+    transition: all 0.1s linear;
+    transform: rotate(10deg);
+    opacity: 1;
+}
+
+// INTRO
+.introductory__part{
+    background-image: url(../img/bg-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro{
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 140px;
+}
+h1{
+    font-weight: 900;
+    font-size: 60px;
+}
+.misha__zuy{
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.uxui__designer{
+    @extend %b40;
+}
+.intro__text{
+    margin-top: 10%;
+}
+
+.arrow__black{
+    transition: all 0.2s ease-in;
+}
+.mouse__down:hover{
+    .arrow__black{
+        transition: all 0.2s ease-in;
+        transform: translateY(6px);
+    }
+}
+// Quicly Start
+
+.line__general{
+    width: 52px;
+    height: 1px;
+    background: #000;
+}
+.text__general{
+    @extend %r20;
+}
+.hashtags-home{
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+}
+@media screen and (max-width:576px){
+    .hashtags-home{
+        margin-bottom: 0;
+    }
+    .adaptive__hash{
+        margin-bottom: 7rem;
+    }
+    .footer__email{
+        font-size: 50px;
+    }
+}
+.hash{
+    @extend %r14;
+    padding: 5px 15px;
+    height: 32px;
+    border-radius: 200px;
+    background: #f2f2f2;
+}
+.general-button{
+    color: white;
+    height: 58px;
+    padding: 18px 30px;
+    border-radius: 18px;
+    background: #000;
+    text-decoration: none;
+}
+.general-button:hover{
+    color: white; 
+    background: rgb(34, 34, 34); 
+}
+
+// FOOTER
+
+.footer__email{
+    font-weight: 700;
+    color: black;
+    font-size: calc(28px + 22 * (100vw/1280));
+}
+@media screen and (max-width:576px){
+    .footer__email{
+        font-size: calc(28px + (22 + 22 * 0.7) * ((100vw - 320px)/1280));
+    }
+}
+.footer__email:hover{
+    color: rgb(53, 53, 53);
+}
+.footer__text{
+    @extend %l23
+}
+.socnetwork{
+    transition: all 0.2s linear;  
+}
+.socnetwork:hover{
+    transition: all 0.2s linear;
+    transform: scale(0.95);
+}
+
+// ABOUT
+
+h2{
+    @extend %b60
+}
+.sp__ukraine{
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.under__h3{
+    @extend %b20
+}
+.text__about{
+    p{
+        font-weight: 400;
+        font-size: 18px;
+    }
+}
+.about__me{
+    p{
+        @extend %l23
+    }
+}
+.under__h3{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.experience_about{
+    margin-top: 7rem;
+}
+.skills_about{
+    margin-top: 7rem;
+}
+@media screen and (max-width:484px){
+    .title__about{
+        font-size: 38px;
+    }
+}
+
+
+// WORKS
+.work__img{
+    transition: all 0.2s ease-in;
+    border-radius: 10px;
+}
+.work__img:hover{
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.09);
+    transition: all 0.2s ease-in;
+}
+.work__block{
+    margin-bottom: 12.5rem;
+}
+
+// SNAPPY
+.bg-work{
+    margin-top: 2rem;
+    width: 100%;
+}
+.bg-grey{
+    background: #F5F4F4;
+    padding: 70px 0;
+}
+.subtext__overview{
+    margin-bottom: 1rem;
+    list-style-type: disc;
+    @extend %l23
+}
+.void__block{
+    margin-bottom: 5rem;
+}
+.subtitle{
+    margin-bottom: 2rem;
+    @extend %l23
+}
+.img__block{
+    margin-top: 4rem;
+}
+
+
+// Customer Reviews
+
+.accordion{
+    border: 3px solid #f2f2f2;
+    border-radius: 30px;
+    padding: 25px;
+}
+.accordion-button{
+    padding: 20px 0;
+}
+.accordion-button::after{
+    margin-left: 0;
+}
+.accordion-button:not(.collapsed){
+    color: white;
+    background-color: #fff;
+    box-shadow: none;
+}
+.nameuser{
+    @extend %b16
+}
+
+.text__next{
+    @extend %b40
+}
+.link__nextproj{
+    transition: all .3s ease-in;
+}
+.link__nextproj:hover{
+    transition: all .3s ease-in;
+    transform: scale(0.97);
+}
+
+
+.scroll-to-top{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    border: none;
+    display: none;
+    background: transparent;
+}
+.scroll-circle{
+    width: 72px;
+    height: 72px;
+    background: #E4FF3F;
+    border-radius: 50%;
+    border: 3px solid #d5f50a;
+    transition: all .2s ease-out;
+}
+.arrow-scroll{
+    transition: all .2s ease-out;
+}
+.scroll-circle:hover{
+    .arrow-scroll{
+        transition: all .2s ease-out;
+        transform: translateY(-4px);
+    }
+}
+.scroll-to-top--active{
+    visibility: visible;
+    transition: all 0.2s ease-in;
+}
+
+
+// PRELOADER
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    /* фоновый цвет */
+    background: #ffffff;
+    z-index: 1001;
+  }
+  
+  .preloader__image {
+    position: relative;
+  }
+  
+  .loaded_hiding {
+    opacity: 0;
+  }
+  
+  .loaded{
+      display: none;
+  }
